@@ -150,10 +150,6 @@ No known bugs at this time.
 
 ## Authors
 
-###### Version 4
-
-- Chinomso Okoye - [Github](https://github.com/chinomsokoye) / [Twitter](https://twitter.com/chioarhe)
-
 ###### Version 3
 
 - Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
