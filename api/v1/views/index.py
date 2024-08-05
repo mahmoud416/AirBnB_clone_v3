@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""Index view"""
+"""index.py to connect to API"""
 from api.v1.views import app_views
 from flask import Flask, Blueprint, jsonify
 from models import storage
 
 
-stats = {
+hbnbText = {
     "amenities": "Amenity",
     "cities": "City",
     "places": "Place",
@@ -16,16 +16,16 @@ stats = {
 
 
 @app_views.route('/status', strict_slashes=False)
-def status_route():
-    """Status of the web server"""
+def hbnbStatus():
+    """hbnbStatus"""
     return jsonify({"status": "OK"})
 
 
 @app_views.route('/stats', strict_slashes=False)
-def stats_route():
-    """Stats"""
+def hbnbStats():
+    """hbnbStats"""
     return_dict = {}
-    for key, value in stats.items():
+    for key, value in hbnbText.items():
         return_dict[key] = storage.count(value)
     return jsonify(return_dict)
 
